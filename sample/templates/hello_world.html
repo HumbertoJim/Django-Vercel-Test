@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        {% if user.is_authenticated %}
+            <h2>User: {{user.username}}</h2>
+        {% else %}
+            <h2>Not logged</h2>
+        {% endif %}
+    </body>
+</html>
